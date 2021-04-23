@@ -32,6 +32,13 @@ if(isset($_POST["btnLogin"]))
                 header('Location: ../Mathara/Mathara.php');
 
             }
+            elseif($row["distric"] == "Galle")
+            {
+                $_SESSION['LoginUser'] = $row["username"];
+                $_SESSION['role'] = $row["distric"];
+                header('Location: ../Galle/Galle.php');
+
+            }
             elseif($row["distric"] == "Rathnapura")
             {
                 $_SESSION['LoginUser'] = $row["username"];

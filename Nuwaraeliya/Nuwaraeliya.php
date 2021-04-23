@@ -67,6 +67,15 @@ $chart_data = substr($chart_data, 0, -2);
   	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 
 
+	  <!-- table -->
+
+	  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.0.3/css/buttons.dataTables.min.css">
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.0.3/js/dataTables.buttons.min.js"></script>
+	<script src="//cdn.datatables.net/buttons/1.0.3/js/buttons.print.min.js"></script>
+	<script src="https://cdn.datatables.net/select/1.0.1/js/dataTables.select.min.js"></script>
 
 
 </head>
@@ -474,3 +483,46 @@ Morris.Bar({
  
 });
 </script>
+<script>
+function applyDataTable(){
+  
+  $('#example').DataTable( {
+		dom: 'Bfrtip',
+		buttons: [
+			{
+				extend: 'print',
+				text: 'Print all'
+			},
+			{
+				extend: 'print',
+				text: 'Print current page',
+				exportOptions: {
+					modifier: {
+						  page: 'current'
+					}
+				}
+			}
+		],
+		select: true
+	} );
+  
+  
+}
+
+
+$(document).ready(function() {
+  $('#trigger-update').click(function(){
+      $('#example').DataTable().destroy();
+    
+      setTimeout(function(){
+        applyDataTable();
+      },2000);
+       
+  });
+  
+  applyDataTable();
+	
+} );
+</script>
+
+
