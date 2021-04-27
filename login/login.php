@@ -42,17 +42,24 @@
 </div> -->
 
 <div class="box">
+
 </br>
-   <h2>Sign in</h2>
+<div class="row">
+<h4 style="color:#000; text-align:center; font-family: 'Roboto', sans-serif; font-size:18px;">Smallholder Tea and Rubber Revitalization Project</h4>
+
+<h5 style="color:#000; text-align:center; font-family: 'Roboto', sans-serif;">(STaRR)</h5>
+   <div>
    <p></p>
+   <div class="row">
+   <div>
    </br>
         <div class="row">
             <div class="column">
                 <img src="../img/logo/sri.jpg" alt="Srilanka" style="width:80%">
             </div>
-            <div class="column">
+            <!-- <div class="column">
                 <img src="../img/logo/ifad.png" alt="ifad" style="width:70%">
-            </div>
+            </div> -->
             <div class="column">
                 <img src="../img/logo/starr.jpg" alt="Starr" style="width:100%">
             </div>
@@ -60,6 +67,16 @@
                 <img src="../img/logo/plant.jpg" alt="Plant" style="width:100%">
             </div>
         </div>
+        </br>
+        <div class="row">
+
+        </br>
+        <h4 style="color:#000; text-align:center; font-family: 'Roboto', sans-serif;">GPS Data Monitoring Dashboard</h4>
+        <br>
+        <hr>
+        </div>
+   </br>
+   </br>
    </br>
    <form action="" method="POST">
      <div class="inputBox">

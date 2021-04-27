@@ -146,11 +146,7 @@ tr:nth-child(even) {
 						</ul>
 					</li>
 
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="tables-bootstrap.html">
-              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
-            </a>
-					</li>
+				
 
 					<li class="sidebar-header">
 						Plugins & Addons

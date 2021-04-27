@@ -139,10 +139,9 @@ $result = mysqli_query($conn,"SELECT * FROM tidetails_db");
                 <i class="align-middle" data-feather="settings"></i>
               </a>
 
-							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
-                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span class="text-dark">STaRR</span>
-              </a>
-							<div class="dropdown-menu dropdown-menu-right">
+			  <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                <img src="../img/avatars/starr.jpg" class="avatar img-fluid rounded mr-1" alt="" /> <span class="text-dark">User</span>
+              </a>		<div class="dropdown-menu dropdown-menu-right">
 							
 								<a class="dropdown-item" href="#">Log out</a>
 							</div>

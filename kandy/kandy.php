@@ -31,7 +31,7 @@ while($row = mysqli_fetch_assoc($query3_result)){
 	$output3 = " ".$row['sum3'];
 }
 
-$que = "SELECT * FROM titarget_db WHERE distric='kandy'";
+$que = "SELECT * FROM titarget_db WHERE distric='kandy'  ORDER BY month";
 $result = mysqli_query($conn, $que);
 $chart_data = '';
 while($row = mysqli_fetch_array($result))
@@ -103,11 +103,14 @@ table caption {
   padding-top: 140px;
   font-size: 14px;
 }
+
+
 </style>
+
 
 </head>
 
-<body>
+<body >
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar">
@@ -502,8 +505,8 @@ Morris.Bar({
  element : 'chart',
  data:[<?php echo $chart_data; ?>],
  xkey:'month',
- ykeys:['tirange','titarget', 'achivetarget'],
- labels:['tirange','titarget', 'achivetarget'],
+ ykeys:['tirange','titarget', 'achivetarget','starrtarget','starrachivetarget'],
+ labels:['tirange','titarget', 'achivetarget','starrtarget','starrachivetarget'],
  hideHover:'auto',
  
 });
